@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:mobile_project/screen/add_data_screen.dart';
 import 'package:mobile_project/controllers/peminjaman_controller.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -29,6 +30,9 @@ class PeminjamanList extends StatelessWidget {
         var peminjaman = peminjamanController.peminjamanList[index];
         return ListTile(
           title: Text(peminjaman.namaPeminjam),
+          subtitle: Text(
+            'Tanggal: ${peminjaman.tanggalPeminjaman.toLocal().toString().split(' ')[0]} | Waktu: ${peminjaman.waktuPeminjaman.format(context)}',
+          ),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -36,6 +40,7 @@ class PeminjamanList extends StatelessWidget {
                 icon: Icon(Icons.edit),
                 onPressed: () {
                   // Navigasi ke halaman update data
+                  // (Belum diimplementasikan pada contoh ini)
                 },
               ),
               IconButton(
@@ -58,6 +63,10 @@ class AddButton extends StatelessWidget {
     return FloatingActionButton(
       onPressed: () {
         // Navigasi ke halaman tambah data
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => AddDataScreen()),
+        );
       },
       child: Icon(Icons.add),
     );

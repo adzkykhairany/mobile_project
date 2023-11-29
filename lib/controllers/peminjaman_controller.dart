@@ -17,8 +17,9 @@ class PeminjamanController extends ChangeNotifier {
           .map((doc) => Peminjaman(
                 id: doc.id,
                 namaPeminjam: doc['namaPeminjam'],
-                tanggalPinjam: doc['tanggalPinjam'].toDate(),
-                isReturned: doc['isReturned'],
+                tanggalPeminjaman: doc['tanggalPeminjaman'].toDate(),
+                waktuPeminjaman: TimeOfDay.fromDateTime(
+                    doc['tanggalPeminjaman'].toDate()), // Tambahkan ini
               ))
           .toList();
       notifyListeners();
