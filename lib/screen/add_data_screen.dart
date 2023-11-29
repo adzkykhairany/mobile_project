@@ -1,9 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_project/controllers/peminjaman_controller.dart';
+import 'package:provider/provider.dart';
 
 class AddDataScreen extends StatefulWidget {
   @override
   _AddDataScreenState createState() => _AddDataScreenState();
+}
+
+class Peminjaman {
+  String namaPeminjam;
+  DateTime tanggalPeminjaman;
+  TimeOfDay waktuPeminjaman;
+
+  Peminjaman({
+    required this.namaPeminjam,
+    required this.tanggalPeminjaman,
+    required this.waktuPeminjaman,
+    // ... tambahkan properti lain sesuai kebutuhan
+  });
 }
 
 class _AddDataScreenState extends State<AddDataScreen> {
@@ -66,10 +80,24 @@ class _AddDataScreenState extends State<AddDataScreen> {
   }
 
   void _addData(BuildContext context) {
-    // Your logic to add data
-    // ...
+    var peminjamanController =
+        Provider.of<PeminjamanController>(context, listen: false);
 
-    // After adding data, navigate back to the previous screen
+    // Ambil data dari input pengguna
+    String namaPeminjam = _namaController.text;
+
+    // Buat objek Peminjaman baru
+    Peminjaman newData = Peminjaman(
+      namaPeminjam: namaPeminjam,
+      tanggalPeminjaman: _selectedDate,
+      waktuPeminjaman: _selectedTime,
+      // ... tambahkan properti lain sesuai kebutuhan
+    );
+
+    // Tambahkan data ke PeminjamanController dengan mengonversi objek ke Map
+    peminjamanController.addPeminjaman(newData.Map());
+
+    // Setelah menambahkan data, kembali ke halaman sebelumnya
     Navigator.pop(context);
   }
 }

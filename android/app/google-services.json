@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "57142357984",
-    "project_id": "mobile-project-b524e",
-    "storage_bucket": "mobile-project-b524e.appspot.com"
+    "project_number": "303393597490",
+    "project_id": "project-d84d9",
+    "storage_bucket": "project-d84d9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:57142357984:android:92bc215b9c60af0d848585",
+        "mobilesdk_app_id": "1:303393597490:android:577e1e64b50350d89a742b",
         "android_client_info": {
-          "package_name": "com.example.mobile_project"
+          "package_name": "com.example.latihan"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAXjg5G0-rCYRu5ar6-JhR720vFIC442rw"
+          "current_key": "AIzaSyAe09pHaRA7eNCPUxQUcV7VmHMI8at7jAE"
         }
       ],
       "services": {
@@ -26,15 +26,15 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:57142357984:android:342996bb53a21dae848585",
+        "mobilesdk_app_id": "1:303393597490:android:d758bd7841d67fa09a742b",
         "android_client_info": {
-          "package_name": "com.example.project_mobile"
+          "package_name": "com.example.project"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAXjg5G0-rCYRu5ar6-JhR720vFIC442rw"
+          "current_key": "AIzaSyAe09pHaRA7eNCPUxQUcV7VmHMI8at7jAE"
         }
       ],
       "services": {

@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDyqhtTJ2mqrPlAqEm7b6CYu_Lkki8NOEU',
-    appId: '1:57142357984:web:d4a067c973540393848585',
-    messagingSenderId: '57142357984',
-    projectId: 'mobile-project-b524e',
-    authDomain: 'mobile-project-b524e.firebaseapp.com',
-    storageBucket: 'mobile-project-b524e.appspot.com',
-    measurementId: 'G-6RFE1CXTHD',
+    apiKey: 'AIzaSyBGRGxH6P17PN96GCbOyFj1BBKlDqoBfKQ',
+    appId: '1:303393597490:web:e6bfa7df42979d3f9a742b',
+    messagingSenderId: '303393597490',
+    projectId: 'project-d84d9',
+    authDomain: 'project-d84d9.firebaseapp.com',
+    storageBucket: 'project-d84d9.appspot.com',
+    measurementId: 'G-L8R7KEXPHR',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAXjg5G0-rCYRu5ar6-JhR720vFIC442rw',
-    appId: '1:57142357984:android:92bc215b9c60af0d848585',
-    messagingSenderId: '57142357984',
-    projectId: 'mobile-project-b524e',
-    storageBucket: 'mobile-project-b524e.appspot.com',
+    apiKey: 'AIzaSyAe09pHaRA7eNCPUxQUcV7VmHMI8at7jAE',
+    appId: '1:303393597490:android:577e1e64b50350d89a742b',
+    messagingSenderId: '303393597490',
+    projectId: 'project-d84d9',
+    storageBucket: 'project-d84d9.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCt4pA77gKFSvn4xuxT3s0PVqFFkTwjHKE',
-    appId: '1:57142357984:ios:8fcbacdc3a1dd9c7848585',
-    messagingSenderId: '57142357984',
-    projectId: 'mobile-project-b524e',
-    storageBucket: 'mobile-project-b524e.appspot.com',
-    iosBundleId: 'com.example.mobileProject',
+    apiKey: 'AIzaSyDRp2thY17nhw7TjF0rH66Ix9T3bTCZoUY',
+    appId: '1:303393597490:ios:b376ca15c7e1dc8f9a742b',
+    messagingSenderId: '303393597490',
+    projectId: 'project-d84d9',
+    storageBucket: 'project-d84d9.appspot.com',
+    iosBundleId: 'com.example.latihan',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCt4pA77gKFSvn4xuxT3s0PVqFFkTwjHKE',
-    appId: '1:57142357984:ios:86ef7107bda249a8848585',
-    messagingSenderId: '57142357984',
-    projectId: 'mobile-project-b524e',
-    storageBucket: 'mobile-project-b524e.appspot.com',
-    iosBundleId: 'com.example.mobileProject.RunnerTests',
+    apiKey: 'AIzaSyDRp2thY17nhw7TjF0rH66Ix9T3bTCZoUY',
+    appId: '1:303393597490:ios:2e827dcc9aae0b719a742b',
+    messagingSenderId: '303393597490',
+    projectId: 'project-d84d9',
+    storageBucket: 'project-d84d9.appspot.com',
+    iosBundleId: 'com.example.latihan.RunnerTests',
   );
 }
