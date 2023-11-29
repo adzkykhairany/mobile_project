@@ -4,7 +4,7 @@ import 'package:mobile_project/services/firebase_service.dart';
 
 class PeminjamanController extends ChangeNotifier {
   final FirebaseService _firebaseService = FirebaseService();
-  late List<Peminjaman> peminjamanList;
+  List<Peminjaman>? peminjamanList;
 
   PeminjamanController() {
     _fetchPeminjaman();

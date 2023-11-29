@@ -109,7 +109,9 @@ class AddDataForm extends StatelessWidget {
               Text('Tanggal Peminjaman: ${selectedDate.toLocal()}'),
               SizedBox(width: 20),
               ElevatedButton(
-                onPressed: () => _selectDate(context),
+                onPressed: () async {
+                  await _AddDataScreenState()._selectDate(context);
+                },
                 child: Text('Pilih Tanggal'),
               ),
             ],
@@ -120,7 +122,9 @@ class AddDataForm extends StatelessWidget {
               Text('Waktu Peminjaman: ${selectedTime.format(context)}'),
               SizedBox(width: 20),
               ElevatedButton(
-                onPressed: () => _selectTime(context),
+                onPressed: () async {
+                  await _AddDataScreenState()._selectTime(context);
+                },
                 child: Text('Pilih Waktu'),
               ),
             ],

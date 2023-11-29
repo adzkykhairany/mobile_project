@@ -25,9 +25,9 @@ class PeminjamanList extends StatelessWidget {
     var peminjamanController = Provider.of<PeminjamanController>(context);
 
     return ListView.builder(
-      itemCount: peminjamanController.peminjamanList.length,
+      itemCount: peminjamanController.peminjamanList!.length,
       itemBuilder: (context, index) {
-        var peminjaman = peminjamanController.peminjamanList[index];
+        var peminjaman = peminjamanController.peminjamanList![index];
         return ListTile(
           title: Text(peminjaman.namaPeminjam),
           subtitle: Text(

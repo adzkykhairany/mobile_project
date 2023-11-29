@@ -31,9 +31,9 @@ class Peminjaman {
   static Peminjaman fromMap(Map<String, dynamic> map) {
     return Peminjaman(
       id: map['id'],
-      namaPeminjam: map['namaPeminjam'],
-      tanggalPeminjaman: map['tanggalPeminjaman'],
-      waktuPeminjaman: convertStringToTimeOfDay(map['waktuPeminjaman']),
+      namaPeminjam: map['nama'],
+      tanggalPeminjaman: map['tanggal'],
+      waktuPeminjaman: convertStringToTimeOfDay(map['waktu']),
     );
   }
 
@@ -41,9 +41,9 @@ class Peminjaman {
   Map<String, dynamic> toMap() {
     return {
       'id': id,
-      'namaPeminjam': namaPeminjam,
-      'tanggalPeminjaman': tanggalPeminjaman,
-      'waktuPeminjaman': convertTimeOfDayToString(waktuPeminjaman),
+      'nama': namaPeminjam,
+      'tanggal': tanggalPeminjaman,
+      'waktu': convertTimeOfDayToString(waktuPeminjaman),
     };
   }
 }
